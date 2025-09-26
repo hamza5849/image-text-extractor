@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* App Container - full screen center */
+.app-container {
+  @apply min-h-screen flex justify-center items-center bg-gray-100 p-4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Parent Box - main card */
+.parent-box {
+  @apply bg-white shadow-lg rounded-2xl p-6 w-full max-w-lg;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header */
+.header {
+  @apply text-3xl font-bold mb-6 text-center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Child Boxes - responsive flex */
+.child-boxes {
+  @apply flex flex-col md:flex-row gap-6;
 }
 
-.App-link {
-  color: #61dafb;
+/* Upload Box */
+.upload-box {
+  @apply flex flex-col w-full md:w-1/2 gap-4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* File Input */
+.file-input {
+  @apply p-2 border rounded mb-2;
+}
+
+/* Language Selector */
+.language-selector select {
+  @apply w-full p-2 border rounded;
+}
+
+/* Extract Button */
+.extract-button {
+  @apply bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition disabled:opacity-50;
+}
+
+/* Text Box */
+.text-box {
+  @apply w-full md:w-1/2;
+}
+
+/* Text Output */
+.text-output {
+  @apply w-full h-48 p-3 border rounded overflow-y-auto whitespace-pre-line bg-gray-50 text-sm;
 }
