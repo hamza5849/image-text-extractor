@@ -15,11 +15,7 @@ This is a simple **React** application that allows users to upload an image and 
 
 ---
 
-## Demo
 
-[Optional: Add a GIF or screenshot here]
-
----
 
 ## Installation
 
